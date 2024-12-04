@@ -13,7 +13,7 @@ print(" ")
 #Peso
 print("Peso (kg):")
 peso_input=input()
-peso=int(peso_input)
+peso=float(peso_input)
 print(" ")
 #Altezza
 print("Altezza (metri):")
@@ -59,3 +59,4 @@ elif 35 <= BMI < 40:
     print("Per chi è obeso di secondo grado, è fondamentale cercare un supporto medico specializzato. Rivolgiti a un endocrinologo, un nutrizionista o un chirurgo bariatrico per valutare le opzioni di trattamento più adatte al tuo caso. Seguire una dieta bilanciata, praticare regolarmente esercizio fisico e considerare terapie mediche o interventi chirurgici possono essere parte di un approccio completo per gestire l'obesità di secondo grado in modo sicuro ed efficace.")
 else:
     print("Per chi è obeso di terzo grado, è cruciale cercare assistenza medica urgente. Consulta un medico specializzato in obesità o un chirurgo bariatrico per discutere delle opzioni di trattamento più appropriate per il tuo caso. Potrebbero essere necessari interventi più aggressivi, come la chirurgia bariatrica, insieme a cambiamenti dello stile di vita e monitoraggio medico regolare. Seguire un piano di trattamento sotto la guida di professionisti sanitari può aiutarti a gestire l'obesità di terzo grado in modo sicuro e mirato.")
+input("\nPremi invio per terminare l'esecuzione")
