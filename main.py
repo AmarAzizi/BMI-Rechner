@@ -1,62 +1,62 @@
-print("CALCOLATORE BMI")
+#-*- coding: utf-8 -*-
+print("BMI RECHNER")
 print(" ")
+#Geschlecht
+print("Welches Geschlecht hast du? \nM = Männlich \nW = Weiblich")
+M = "Männlich"
+m = "Männlich"
+W = "Weiblich"
+w = "Männlich"
+geschlecht_input=input()
+geschlecht = str(geschlecht_input)
 print(" ")
-#Genere
-print("Di che genere sei? \nM = Maschio \nF = Femmina")
-M="Maschio"
-m="Maschio"
-F="Femmina"
-f="Femmina"
-genere_input=input()
-genere=str(genere_input)
+#Gewicht
+print("Gewicht (kg):")
+gewicht_input=input()
+Gewicht=float(gewicht_input)
 print(" ")
-#Peso
-print("Peso (kg):")
-peso_input=input()
-peso=float(peso_input)
-print(" ")
-#Altezza
-print("Altezza (metri):")
-altezza_input=input()
-altezza=float(altezza_input)
+#Grösse
+print("grösse (meter):")
+grösse_input=input()
+grösse=float(grösse_input)
 #BMI
 print(' ')
-print("Ecco il tuo BMI:")
-if genere_input==[F, f]:
-    BMI=(peso/(altezza*altezza)*1.1)
+print("Hier ist dein BMI:")
+if geschlecht_input==[W, w]:
+    BMI=(Gewicht/(grösse*grösse)*1.1)
 else:
-    BMI=(peso/(altezza*altezza))
+    BMI=(Gewicht/(grösse*grösse))
 print(BMI)
-#Classe
+#Typ
 if BMI < 16:
-    print("\nSei gravemente sottopeso")
+    print("\nDu bist schwer untergewichtig.")
 elif 16 <= BMI < 18.5:
-    print("\nSei sottopeso")
+    print("\nDu bist untergewichtig.")
 elif 18.5 <= BMI < 24:
-    print("\nSei normopeso")
+    print("\nDu bist normalgewichtig.")
 elif 24 <= BMI < 30:
-    print("\nSei sovrappeso")
+    print("\nDu bist übergewichtig.")
 elif 30 <= BMI < 35:
-    print("\nSei obeso di 1° grado")
+    print("\nDu bist fettleibig im 1. Grad.")
 elif 35 <= BMI < 40:
-    print("\nSei obeso di 2° grado")
+    print("\nDu bist fettleibig im 2. Grad.")
 else:
-    print("\nSei obeso di 3° grado")
+    print("\nDu bist fettleibig im 3. Grad.")
 print(" ")
-#Consigli
-print("Consiglio:")
+#Ratschläge.
+print("Rat:")
 if BMI < 16:
-    print("Se sei gravemente sottopeso, consulta immediatamente un professionista della salute, come un medico o un dietologo. Seguire una dieta equilibrata e sana, ricca di proteine, carboidrati e grassi sani, può aiutarti a raggiungere un peso corporeo sano. Evita di fare cambiamenti improvvisi nella tua alimentazione senza supervisione medica.")
+    print("Wenn du schwer untergewichtig bist, konsultiere sofort einen Gesundheitsprofi wie einen Arzt oder einen Ernährungsberater. Eine ausgewogene und gesunde Ernährung, die reich an Proteinen, Kohlenhydraten und gesunden Fetten ist, kann dir helfen, ein gesundes Körpergewicht zu erreichen. Vermeide plötzliche Änderungen in deiner Ernährung ohne medizinische Aufsicht.")
 elif 16 <= BMI < 18.5:
-    print("Un consiglio importante per chi è sottopeso è quello di concentrarsi sulla qualità e sulla quantità degli alimenti consumati. Assicurati di includere nella tua dieta cibi nutrienti e calorici come frutta, verdura, proteine magre, cereali integrali e grassi sani. Considera anche di mangiare frequentemente piccoli pasti e spuntini per aumentare l'apporto calorico giornaliero.")
+    print("Ein wichtiger Ratschlag für Untergewichtige ist, sich auf die Qualität und Menge der verzehrten Lebensmittel zu konzentrieren. Stelle sicher, dass deine Ernährung nährstoffreiche und kalorienreiche Lebensmittel wie Obst, Gemüse, mageres Eiweiß, Vollkornprodukte und gesunde Fette enthält. Erwäge auch, häufig kleine Mahlzeiten und Snacks zu essen, um die tägliche Kalorienaufnahme zu erhöhen.")
 elif 18.5 <= BMI < 24:
-    print("Complimenti, continua così!")
+    print("Herzlichen Glückwunsch, mach weiter so!")
 elif 24 <= BMI < 30:
-    print("Un suggerimento importante per chi è sovrappeso è quello di concentrarsi sulla creazione di abitudini alimentari e di vita più sane. Inizia con piccoli cambiamenti, come ridurre le porzioni, aumentare il consumo di frutta e verdura, preferire alimenti integrali e limitare gli zuccheri e gli alimenti processati. L'esercizio regolare, anche solo una passeggiata quotidiana, può aiutare a migliorare il metabolismo e favorire la perdita di peso. E ricorda, la chiave è la costanza e la pazienza nel perseguire uno stile di vita sano.")
+    print("Ein wichtiger Tipp für Übergewichtige ist, sich auf die Entwicklung gesünderer Ernährungs- und Lebensgewohnheiten zu konzentrieren. Beginne mit kleinen Veränderungen, wie das Reduzieren der Portionsgrößen, das Erhöhen des Konsums von Obst und Gemüse, das Bevorzugen von Vollkornprodukten und das Einschränken von Zucker sowie verarbeiteten Lebensmitteln. Regelmäßige Bewegung, selbst ein täglicher Spaziergang, kann den Stoffwechsel verbessern und die Gewichtsabnahme fördern. Denke daran: Der Schlüssel liegt in Beständigkeit und Geduld, um einen gesunden Lebensstil zu erreichen.")
 elif 30 <= BMI < 35:
-    print("Un consiglio importante per chi è obeso di primo grado è quello di cercare un sostegno professionale. Parla con un medico o un nutrizionista per sviluppare un piano personalizzato che includa una combinazione di dieta equilibrata, esercizio fisico regolare e cambiamenti dello stile di vita sostenibili. Impostare obiettivi realistici e monitorare i progressi può aiutarti a mantenere la motivazione e raggiungere una migliore salute nel lungo termine.")
+    print("Ein wichtiger Ratschlag für Personen mit Adipositas Grad 1 ist, professionelle Unterstützung zu suchen. Sprich mit einem Arzt oder Ernährungsberater, um einen individuellen Plan zu entwickeln, der eine Kombination aus ausgewogener Ernährung, regelmäßiger Bewegung und nachhaltigen Lebensstiländerungen umfasst. Realistische Ziele zu setzen und Fortschritte zu überwachen, kann dir helfen, motiviert zu bleiben und langfristig eine bessere Gesundheit zu erreichen.")
 elif 35 <= BMI < 40:
-    print("Per chi è obeso di secondo grado, è fondamentale cercare un supporto medico specializzato. Rivolgiti a un endocrinologo, un nutrizionista o un chirurgo bariatrico per valutare le opzioni di trattamento più adatte al tuo caso. Seguire una dieta bilanciata, praticare regolarmente esercizio fisico e considerare terapie mediche o interventi chirurgici possono essere parte di un approccio completo per gestire l'obesità di secondo grado in modo sicuro ed efficace.")
+    print("Für Personen mit Adipositas Grad 2 ist es entscheidend, spezialisierte medizinische Unterstützung zu suchen. Wende dich an einen Endokrinologen, Ernährungsberater oder bariatrischen Chirurgen, um die für deinen Fall am besten geeigneten Behandlungsoptionen zu bewerten. Eine ausgewogene Ernährung, regelmäßige körperliche Aktivität und die Berücksichtigung medizinischer Therapien oder chirurgischer Eingriffe können Teil eines umfassenden Ansatzes sein, um Adipositas Grad 2 sicher und effektiv zu bewältigen.")
 else:
-    print("Per chi è obeso di terzo grado, è cruciale cercare assistenza medica urgente. Consulta un medico specializzato in obesità o un chirurgo bariatrico per discutere delle opzioni di trattamento più appropriate per il tuo caso. Potrebbero essere necessari interventi più aggressivi, come la chirurgia bariatrica, insieme a cambiamenti dello stile di vita e monitoraggio medico regolare. Seguire un piano di trattamento sotto la guida di professionisti sanitari può aiutarti a gestire l'obesità di terzo grado in modo sicuro e mirato.")
-input("\nPremi invio per terminare l'esecuzione")
+    print("Für Personen mit Adipositas Grad 3 ist es entscheidend, dringend medizinische Hilfe in Anspruch zu nehmen. Konsultiere einen auf Adipositas spezialisierten Arzt oder einen bariatrischen Chirurgen, um die für deinen Fall am besten geeigneten Behandlungsoptionen zu besprechen. In einigen Fällen können aggressivere Maßnahmen wie eine bariatrische Operation notwendig sein, begleitet von Lebensstiländerungen und regelmäßiger medizinischer Überwachung. Ein individuell abgestimmter Behandlungsplan unter der Anleitung von Gesundheitsexperten kann dir helfen, Adipositas Grad 3 sicher und gezielt zu bewältigen.")
+input("\nDrücke Enter, um die Ausführung zu beenden.")
